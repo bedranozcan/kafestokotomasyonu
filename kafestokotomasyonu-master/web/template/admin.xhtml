@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Facelet Title</title>
+        <h:outputStylesheet library="css" name="bootstrap.css"/>
+        <h:outputScript library="js" name="jquery-3.3.1.slim.min.js"/>
+        <h:outputScript library="js" name="bootstrap.js"/>
+    </h:head>
+    <h:body>
+        <div class="container">
+
+            <div class="mt-3"   >
+                <ui:insert name="menü">
+                    <ui:include src="/template/include/menü.xhtml"/>
+                </ui:insert>
+                
+                <ui:insert name="content">
+                    Default Empty Content
+                </ui:insert>
+            </div>
+
+        </div>
+    </h:body>
+</html>
+

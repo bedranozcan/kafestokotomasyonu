@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+
+
+    <h:form>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <h:commandLink action="/index" value="CAFESTOK DB"/>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <h:commandLink styleClass="nav-item nav-link " action="#{navigationController.page('icecek')}" value="ICECEK"/>
+                    <h:commandLink styleClass="nav-item nav-link " action="#{navigationController.page('yiyecek')}" value="YIYECEK"/>
+                    <h:commandLink styleClass="nav-item nav-link " action="#{navigationController.page('tatli')}" value="TATLI"/>
+                    <h:commandLink styleClass="nav-item nav-link " action="#{navigationController.page('cafe')}" value="CAFE"/>
+                    <h:commandLink styleClass="nav-item nav-link " action="#{navigationController.page('masa')}" value="MASA"/>
+                    <h:commandLink styleClass="nav-item nav-link " action="#{navigationController.page('siparis')}" value="SIPARIS"/>
+                    <h:commandLink styleClass="nav-item nav-link " action="#{navigationController.page('musteri')}" value="MUSTERİ"/>
+                    <h:commandLink styleClass="nav-item nav-link " action="#{navigationController.page('user')}" value="user"/>
+                    <h:commandLink styleClass="nav-item nav-link " action="#{navigationController.page('document')}" value="Document"/>
+                  
+                    
+                     <li class="nav-item">
+                            <h:commandLink styleClass="nav-link" action="#{navigationController.goToFrontendPage('logout')}" value="LOGOUT" />
+                        </li>
+
+
+                </div>
+            </div>
+        </nav>
+
+    </h:form>
+</ui:composition>

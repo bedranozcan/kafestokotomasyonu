@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+        <title>Frontend Panel</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <div id="page">
+                <ui:insert name="header" >
+                    <ui:include src="/frontend/template/common/header.xhtml" />
+                </ui:insert>
+                <div class="container">
+                    <div id="content" class="col-md-9">
+                        <ui:insert name="content" >
+                            <ui:include src="/frontend/template/common/content.xhtml" />
+                        </ui:insert>
+                    </div>
+                </div>
+                <footer id="footer" class="footer">
+                    <ui:insert name="footer" >
+                        <ui:include src="/frontend/template/common/footer.xhtml" />
+                    </ui:insert>
+                </footer>
+            </div>
+        </h:form>
+    </h:body>
+</html>
